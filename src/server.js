@@ -11,11 +11,7 @@ const server = app.listen(PORT, () => console.log(`server listening on port ${PO
 
 const io = new Server(server)
 
-const messages = [
-    {author: "Bauti", text: "Buenasss"},
-    {author: "Pedro", text: "Como andan?"},
-    {author: "Andres", text: "Para el orto"},
-]
+const messages = []
 
 io.on("connection", (socket)=>{
     //enviamos los mensajes al cliente
